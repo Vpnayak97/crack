@@ -157,5 +157,160 @@ section {
   flex: 1;
   text-align: center;
 } 
+:root {
+  --bg: #000;
+  --text: #eee;
+  --accent: #ff3c00;
+  --card: #111;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo-large {
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #000;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.btn.accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Workshop Cards */
+.workshops-section, .trainers-section, .partners-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.workshop-card, .trainer-card {
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 15px;
+  width: 280px;
+}
+
+.workshop-card img, .trainer-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.partner-logo {
+  height: 80px;
+}
+
+/* Course page */
+.course-hero {
+  text-align: center;
+  position: relative;
+}
+
+.course-hero .hero-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.course-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.course-details {
+  padding: 40px 20px;
+  background: var(--card);
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: var(--text);
+}
+
 
 
