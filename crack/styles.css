@@ -1,0 +1,161 @@
+:root {
+  --primary: #0f766e;
+  --accent: #f59e0b;
+  --bg: #0f172a;
+  --text: #f8fafc;
+  --card-bg: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+header {
+  background: #020617;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.large-logo {
+  height: 80px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.workshop-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.workshop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.how-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.how-steps div {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.partners-section img {
+  height: 100px;
+  margin: 1rem 0;
+}
+
+.site-footer {
+  background: #020617;
+  color: #9ca3af;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .large-logo { height: 60px; }
+  nav a { margin-left: 1rem; }
+}
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.button-group .btn {
+  flex: 1;
+  text-align: center;
+} 
+
+
